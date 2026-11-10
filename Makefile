@@ -44,7 +44,7 @@ GO_PKG_LDFLAGS:=-s -w
 # instead of falling back to running a standard Makefile 'make' loop.
 define Build/Compile
 	$(call GoPackage/Golang/Build/Compile)
-enddefine
+endef
 
 define Package/mwgp/install
 	$(INSTALL_DIR) $(1)/usr/bin
